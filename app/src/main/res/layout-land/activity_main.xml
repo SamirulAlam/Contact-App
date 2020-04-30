@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/layout-land"
+    tools:context=".MainActivity">
+
+
+    <fragment
+        android:id="@+id/listfrag"
+        android:name="com.example.kucse19.listfrag"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_listfrag2" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/btnfrag"
+            android:name="com.example.kucse19.btnfrag"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_btnfrag" />
+
+        <fragment
+            android:id="@+id/callfrag"
+            android:name="com.example.kucse19.callfrag"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            tools:layout="@layout/fragment_callfrag" />
+
+        <fragment
+            android:id="@+id/infofrag"
+            android:name="com.example.kucse19.infofrag"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            tools:layout="@layout/fragment_infofrag" />
+    </LinearLayout>
+</LinearLayout>
