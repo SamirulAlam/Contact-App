@@ -1,2 +1,2 @@
-# Contract-App
+# Contact-App
 A test App
